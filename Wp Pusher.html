@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WP Pusher Checkout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f9f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            width: 800px;
+        }
+        .checkout-form {
+            flex: 1;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 250px;
+            background: #0073e6;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        h2, h3 {
+            margin-bottom: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #218838;
+        }
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="checkout-form">
+            <h2>Checkout</h2>
+            <h3>Your Basic Information</h3>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="email" placeholder="Email">
+            <h3>Your Payment Information</h3>
+            <input type="text" placeholder="Card Number">
+            <input type="text" placeholder="MM / YY">
+            <input type="text" placeholder="CVC">
+            <button>Buy WP Pusher</button>
+        </div>
+        <div class="sidebar">
+            <h3>Freelancer</h3>
+            <p class="price">$99 / year</p>
+            <p>Use on 5 client sites</p>
+            <p>Private repositories</p>
+            <p>Email support</p>
+        </div>
+    </div>
+</body>
+</html>

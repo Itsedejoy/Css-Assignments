@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #ECF7F4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1000px;
+            width: 100%;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        /* Left Section */
+        .left-section {
+            width: 40%;
+            padding: 40px;
+            background: #ECF7F4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+        }
+
+        .left-section img {
+            width: 50px;
+            margin-bottom: 20px;
+        }
+
+        .left-section h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .left-section p {
+            font-size: 14px;
+            color: #666;
+            text-align: left;
+        }
+
+        /* Right Section */
+        .right-section {
+            width: 60%;
+            padding: 40px;
+        }
+
+        .form-group {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .form-group div {
+            flex: 1;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .register-button {
+            width: 100%;
+            padding: 12px;
+            background-color: #21B49A;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .register-button:hover {
+            background-color: #1A947D;
+        }
+
+        .terms {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 10px;
+            color: #666;
+        }
+
+        .terms a {
+            color: #21B49A;
+            text-decoration: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .left-section {
+                width: 100%;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .right-section {
+                width: 100%;
+                padding: 20px;
+            }
+
+            .form-group {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <img src="icon.png" alt="Logo">
+            <h2>For Individuals</h2>
+            <p>Start benefiting from the wellness experience. For companies looking to increase productivity and improve organizational wellness.</p>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <form>
+                <div class="form-group">
+                    <div>
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" placeholder="Enter First Name">
+                    </div>
+                    <div>
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" placeholder="Enter Last Name">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div>
+                        <label for="gender">Gender</label>
+                        <select id="gender">
+                            <option>Select here</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div>
+                        <label for="weight">Weight (KG)</label>
+                        <input type="number" id="weight" placeholder="Enter Weight">
+                    </div>
+                    <div>
+                        <label for="height">Height (CM)</label>
+                        <input type="number" id="height" placeholder="Enter Height">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div>
+                        <label for="activity">Activity Level</label>
+                        <select id="activity">
+                            <option>Select here</option>
+                            <option>Low</option>
+                            <option>Moderate</option>
+                            <option>High</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter Password">
+                    </div>
+                </div>
+
+                <button type="submit" class="register-button">Register</button>
+
+                <p class="terms">By clicking Register, you agree to our <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a>.</p>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
